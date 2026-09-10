@@ -1,0 +1,8 @@
+# https://www.robotstxt.org/robotstxt.html
+User-agent: *
+Allow: /
+Disallow: /profile/
+Disallow: /logout
+
+# Sitemaps
+Sitemap: https://provider.skilledustaad.com/sitemap.xml

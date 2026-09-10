@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  frontend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "80:80" # Maps port 80 on the host to port 80 on the container
+    restart: unless-stopped
+    container_name: karaya-provider-frontend
+    environment:
+      - NODE_ENV=production
